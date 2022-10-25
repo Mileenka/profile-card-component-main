@@ -1,0 +1,130 @@
+:root {
+  --DarkCyan: hsl(185, 75%, 39%);
+  --VeryDarkDesaturatedBlue: hsl(229, 23%, 23%);
+  --DarkGrayishBlue: hsl(227, 10%, 46%);
+  --DarkGray: hsl(0, 0%, 59%);
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 1.8rem;
+  color: var(--VeryDarkDesaturatedBlue);
+  background: url('../images/bg-pattern-top.svg'), url('../images/bg-pattern-bottom.svg');
+  background-position: right 52vw bottom 35vh, left 48vw top 52vh;
+  background-repeat: no-repeat, no-repeat;
+  background-color: var(--DarkCyan);
+}
+
+main {
+  min-height: 37rem;
+  min-width: 32rem;
+  border-radius: 1.5rem;
+  background-color: white;
+  box-shadow: 6px 50px 100px -49px rgb(14, 89, 96);
+}
+
+.bg-card {
+  min-height: 13.8rem;
+  background: url('../images/bg-pattern-card.svg') center/cover;
+  border-radius: 1.5rem 1.5rem 0 0;
+}
+
+.avatar img {
+  margin: -5.4rem 0 0 10.5rem;
+  border-radius: 6rem;
+  border: 0.5rem solid white;
+}
+
+.personal-data {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: .5rem;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-top: 1rem;
+  margin-left: -2.6rem;
+}
+
+.age,
+.city {
+  color: var(--DarkGrayishBlue);
+}
+
+.age {
+  margin: -2.3rem 0 0 12rem;
+
+}
+
+.city {
+  margin-top: 1rem;
+  font-size: 1.4rem;
+}
+
+hr {
+  min-width: 32rem;
+  margin-top: 2rem;
+  opacity: .2;
+}
+
+#info {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 2.5rem;
+}
+
+.followers-likes-photos {
+  margin-top: .5rem;
+  letter-spacing: 2px;
+  font-size: 1rem;
+  color: var(--DarkGray);
+}
+
+.attribution {
+  margin-top: 2rem;
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.attribution a {
+  letter-spacing: .1rem;
+  text-decoration-line: none;
+  color: hsl(228, 45%, 44%);
+}
+
+@media all and (min-width: 800px) {
+  main {
+    min-height: 37.4rem;
+    min-width: 35rem;
+    box-shadow: 6px 50px 100px -7px rgb(8, 105, 114)
+  }
+
+  .avatar {
+    margin-left: 2.4rem;
+  }
+
+  hr {
+    margin-top: 2.5rem;
+  }
+}
